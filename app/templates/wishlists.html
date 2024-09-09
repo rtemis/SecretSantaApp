@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secret Santa Join</title>
+</head>
+<body>
+    <h1>Join Secret Santa</h1>
+    <form action="/join/{{ group_id }}" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="wishlist">Wishlist (up to 5 items):</label>
+        <textarea id="wishlist" name="wishlist" rows="5" required></textarea><br>
+        <button type="submit">Join</button>
+    </form>
+</body>
+</html>
+
